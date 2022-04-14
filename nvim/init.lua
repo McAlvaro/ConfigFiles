@@ -32,3 +32,33 @@ require('lualine').setup {
     }
 }
 
+-- Theme
+local colors = require('github-theme.colors')
+--colors.syntax.func = '#06989a'
+--colors.syntax.keyword = '#00d75f'
+
+-- Setup autopairs
+require('nvim-autopairs').setup{}
+
+-- Setup impatient
+require('impatient')
+
+-- Treesitter
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+  indent = {
+    enable = true
+  }
+}

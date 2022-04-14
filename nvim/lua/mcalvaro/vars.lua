@@ -19,4 +19,4 @@ vim.o.packpath = vim.o.packpath .. ',' .. packer_path
 --    bg = "#2b2b2b",
 --    menu = "#3f3f3f"
 -- }
--- vim.g.dracula_transparent_bg = true
+-- vim.g.github_transparent = true
