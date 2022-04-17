@@ -25,7 +25,16 @@ return require('packer').startup(function(use)
     -- [[ Dev ]]
     use {
         'nvim-telescope/telescope.nvim',                 -- fuzzy finder
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { 
+            {'nvim-lua/plenary.nvim'},
+			{ "nvim-lua/popup.nvim" },
+            { "nvim-telescope/telescope-fzy-native.nvim" },
+			{ "kyazdani42/nvim-web-devicons" },
+			{ "nvim-telescope/telescope-file-browser.nvim" },
+			{ "nvim-telescope/telescope-dap.nvim" },
+			{ "nvim-telescope/telescope-ui-select.nvim" },
+			{ "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
+        }
     }
     use { 'windwp/nvim-autopairs' }                     -- autopairs
     -- use { 'majutsushi/tagbar' }                         -- TagBar
@@ -45,6 +54,8 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+
+    use { 'mg979/vim-visual-multi', branch = 'master' } -- Multi Line
 
     -- [[LSP]]
     use {
@@ -67,6 +78,22 @@ return require('packer').startup(function(use)
             "L3MON4D3/LuaSnip",
         }
     }
+
+    -- Laravel
+    use({
+		"noahfrederick/vim-laravel",
+		requires = {
+			{ "tpope/vim-projectionist" },
+			{ "noahfrederick/vim-composer" },
+		},
+	})
+
+    use({
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
+	})
+
+    use { "szw/vim-maximizer" }
     
 end)
 --config = {
