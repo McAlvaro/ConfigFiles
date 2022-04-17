@@ -46,6 +46,28 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
 
+    -- [[LSP]]
+    use {
+        'neovim/nvim-lspconfig',
+        'williamboman/nvim-lsp-installer',
+        'hrsh7th/cmp-nvim-lsp-signature-help',
+        'ray-x/lsp_signature.nvim'
+    }
+
+    -- [[ Completation ]]
+    use {
+        "hrsh7th/nvim-cmp",
+        requires = {
+             "hrsh7th/cmp-buffer",
+             "hrsh7th/cmp-path",
+             "hrsh7th/cmp-nvim-lua",
+             "hrsh7th/cmp-nvim-lsp",
+             "saadparwaiz1/cmp_luasnip",
+             "onsails/lspkind-nvim",
+            "L3MON4D3/LuaSnip",
+        }
+    }
+    
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

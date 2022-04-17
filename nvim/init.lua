@@ -14,6 +14,8 @@ require('mcalvaro.vars')	-- Variables
 require('mcalvaro.opts')	-- Opciones
 require('mcalvaro.keys')    -- Mapeo de teclas
 require('mcalvaro.plug')	-- Plugins
+require('mcalvaro.lsp')     -- LSP 
+require('mcalvaro.completation')     -- LSP 
 
 -- PLUGINS: Add this section
 require('nvim-tree').setup{}
