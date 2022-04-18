@@ -60,6 +60,12 @@ map('n', '<Leader>gs', [[:Telescope git_status <CR>]], {})          -- Git statu
 
 map('n', '<Leader>gc', [[:Telescope git_commits <CR>]], {})          -- Git Commits
 
+map('n', '<Leader>gb', [[:Telescope git_branches <CR>]], {})          -- Git Branches
+
+map('n', '<Leader>ss', [[:lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ") }) <CR>]], {})
+
+map('n', '<Leader>sl', [[ :lua require('telescope.builtin').live_grep() <CR> ]], {})
+
 -- IdentLine
 map('n', 'ii', [[:IndentLinesToggle <CR>]], {})
 
