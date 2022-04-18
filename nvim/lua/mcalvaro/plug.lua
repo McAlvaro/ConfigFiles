@@ -93,8 +93,26 @@ return require('packer').startup(function(use)
 		requires = "kyazdani42/nvim-web-devicons",
 	})
 
-    use { "szw/vim-maximizer" }
+    use { "szw/vim-maximizer" }                 --Maximizer 
+
+    use {"rcarriga/nvim-notify"}                -- Notify
     
+    -- Harpoon
+    use({
+		"ThePrimeagen/harpoon",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-lua/popup.nvim",
+		},
+	})
+
+    use({
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("colorizer").setup({})
+		end,
+	})
+
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

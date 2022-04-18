@@ -64,3 +64,8 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   }
 }
+
+require('notify').setup{}
+
+require('harpoon').setup{}
+

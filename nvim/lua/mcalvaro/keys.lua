@@ -105,3 +105,12 @@ map('n', '<Leader>gt', [[:lua vim.lsp.buf.type_definition() <CR>]], {})         
 map('n', '<Leader>rf', [[:lua vim.lsp.buf.references() <CR>]], {})                  --References
 
 map('n', '<Leader>m', [[:MaximizerToggle <CR>]], {})                                --MaximizerToggle
+
+-- [[Harpoon Command]]
+map('n', '<Leader>aa', [[:lua require("harpoon.mark").add_file() <CR>]], {})        --Add file to harpoon
+
+map('n', '<Leader>hh', [[:lua require("harpoon.ui").toggle_quick_menu() <CR>]], {}) --Show menu harpoon
+
+map('n', '<Leader>nn', [[:lua require("harpoon.ui").nav_next() <CR>]], {})          --Next Harpoon File
+
+map('n', '<Leader>pp', [[:lua require("harpoon.ui").nav_prev() <CR>]], {})          --Prev Harpoon File
