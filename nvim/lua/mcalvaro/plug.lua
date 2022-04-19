@@ -113,6 +113,19 @@ return require('packer').startup(function(use)
 		end,
 	})
 
+    use { "tpope/vim-dotenv" }
+
+    use {"jwalton512/vim-blade"}
+
+    use({
+		"lewis6991/gitsigns.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
+
+    use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
+
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

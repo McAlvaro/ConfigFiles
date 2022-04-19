@@ -16,6 +16,7 @@ require('mcalvaro.keys')    -- Mapeo de teclas
 require('mcalvaro.plug')	-- Plugins
 require('mcalvaro.lsp')     -- LSP 
 require('mcalvaro.completation')     -- LSP 
+require('mcalvaro.bufferline.setup')     -- Setup BufferLine 
 
 -- PLUGINS: Add this section
 require('nvim-tree').setup{}
@@ -68,4 +69,7 @@ require'nvim-treesitter.configs'.setup {
 require('notify').setup{}
 
 require('harpoon').setup{}
+
+require('gitsigns').setup{}
+
 
