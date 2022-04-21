@@ -126,6 +126,8 @@ return require('packer').startup(function(use)
 
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
 
+    use {"akinsho/toggleterm.nvim"}
+
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

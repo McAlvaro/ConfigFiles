@@ -72,4 +72,5 @@ require('harpoon').setup{}
 
 require('gitsigns').setup{}
 
+require("toggleterm").setup{}
 

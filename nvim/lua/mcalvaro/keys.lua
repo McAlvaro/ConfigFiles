@@ -114,3 +114,9 @@ map('n', '<Leader>hh', [[:lua require("harpoon.ui").toggle_quick_menu() <CR>]], 
 map('n', '<Leader>nn', [[:lua require("harpoon.ui").nav_next() <CR>]], {})          --Next Harpoon File
 
 map('n', '<Leader>pp', [[:lua require("harpoon.ui").nav_prev() <CR>]], {})          --Prev Harpoon File
+
+map('t', '<Leader>qt', [[<C-\><C-N><CR>]], {})
+
+map('t', '<Leader>qtt', [[<C-\><C-N><CR> :ToggleTerm <CR>]], {})
+
+map('n', '<Leader>yt', [[:ToggleTerm <CR> ]], {})
