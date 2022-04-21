@@ -17,6 +17,7 @@ require('mcalvaro.plug')	-- Plugins
 require('mcalvaro.lsp')     -- LSP 
 require('mcalvaro.completation')     -- LSP 
 require('mcalvaro.bufferline.setup')     -- Setup BufferLine 
+require('mcalvaro.hlargs.setup')        -- Setup Hlargs 
 
 -- PLUGINS: Add this section
 require('nvim-tree').setup{}
@@ -36,7 +37,7 @@ require('lualine').setup {
 }
 
 -- Theme
-local colors = require('github-theme.colors')
+-- local colors = require('github-theme.colors')
 --colors.syntax.func = '#06989a'
 --colors.syntax.keyword = '#00d75f'
 

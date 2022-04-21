@@ -124,9 +124,16 @@ return require('packer').startup(function(use)
 		},
 	})
 
+    -- Bufferline
     use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
 
     use {"akinsho/toggleterm.nvim"}
+
+    -- Args
+    use {
+        'm-demare/hlargs.nvim',
+        requires = { 'nvim-treesitter/nvim-treesitter' }
+    }
 
 end)
 --config = {

@@ -21,7 +21,7 @@ opt.syntax = "ON"			-- str: Permitir resaltado de sintaxis
 opt.termguicolors = true		-- bool: Si el terminal admite el color de la interfaz de usuario, habilite
 
 cmd('colorscheme github_dark')      	-- cmd: Set colors scheme
---cmd('colorscheme onedark')      	-- cmd: Set colors scheme
+-- cmd('colorscheme onedark')      	-- cmd: Set colors scheme
 
 
 --[[ Search ]]
