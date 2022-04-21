@@ -120,3 +120,5 @@ map('t', '<Leader>qt', [[<C-\><C-N><CR>]], {})
 map('t', '<Leader>qtt', [[<C-\><C-N><CR> :ToggleTerm <CR>]], {})
 
 map('n', '<Leader>yt', [[:ToggleTerm <CR> ]], {})
+
+map('n', '<Leader>mp', [[:Glow <CR>]], {})                                          --Markdown Preview

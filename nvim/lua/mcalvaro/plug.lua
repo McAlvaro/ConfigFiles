@@ -135,6 +135,8 @@ return require('packer').startup(function(use)
         requires = { 'nvim-treesitter/nvim-treesitter' }
     }
 
+    use {"ellisonleao/glow.nvim", branch = 'main'}          -- Markdown Preview
+
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"
