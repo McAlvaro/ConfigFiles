@@ -17,9 +17,10 @@ return require('packer').startup(function(use)
     }
     -- use { 'xiyaowong/nvim-transparent' }
 
-    -- use { 'Mofiqul/dracula.nvim' }
-    use {'projekt0n/github-nvim-theme'}
-    -- use { 'joshdick/onedark.vim' }
+    use { 'Mofiqul/dracula.nvim' }
+    use ({'projekt0n/github-nvim-theme',tag = 'v0.0.7' })
+    use { 'joshdick/onedark.vim' }
+    use { "catppuccin/nvim", as = "catppuccin" }
     -- use { 'McAlvaro/github-nvim-theme' }
 
     -- [[ Dev ]]
