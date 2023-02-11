@@ -138,6 +138,8 @@ return require('packer').startup(function(use)
 
     use {"ellisonleao/glow.nvim", branch = 'main'}          -- Markdown Preview
 
+    use {"windwp/nvim-spectre"}                             -- Search and Replace
+
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

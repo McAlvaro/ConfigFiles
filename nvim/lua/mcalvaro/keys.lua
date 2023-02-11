@@ -122,3 +122,16 @@ map('t', '<Leader>qtt', [[<C-\><C-N><CR> :ToggleTerm <CR>]], {})
 map('n', '<Leader>yt', [[:ToggleTerm <CR> ]], {})
 
 map('n', '<Leader>mp', [[:Glow <CR>]], {})                                          --Markdown Preview
+
+-- Spectre keymaps - Search and Replace
+map('n', '<Leader>sr', [[:lua require('spectre').open() <CR>]], {})                      -- Open Search and Replace
+
+map('n', '<Leader>sw', [[:lua require('spectre').open_visual({select_word=true}) <CR>]], {}) -- Search Select Word
+
+map('n', '<Leader>qf', [[:lua require('spectre.actions').send_to_qf() <CR>]], {})           -- send all item to quickfix
+
+map('n', '<Leader>qs', [[:q <CR>]], {} )                                                    -- Close Search and Replace
+
+map('n', '<Leader><CR>', [[:lua require('spectre.actions').run_current_replace() <CR>]], {}) -- Replace Current Ocurrence
+
+map('n', '<Leader>sf', [[:lua require('spectre').open_file_search() <CR>]], {})              -- Search in Current File
