@@ -12,6 +12,22 @@ Once neovim is installed, clone the repository to a directory of your choice.
 ```
 - Open neovim and run the command `:PackerInstall`
 
+## Addtional
+To use functions such as search for a string or Find and Replace you need to install `ripgrep` and `gnu-sed`
+```Shell
+#Mac Os
+brew install ripgrep
+
+#Linux
+sudo apt-get install ripgrep
+
+```
+
+```Shell
+#Mac Os
+brew install gnu-sed
+
+```
 ## Shortcut
 
 
@@ -40,7 +56,7 @@ Once neovim is installed, clone the repository to a directory of your choice.
 | `<Leader> k`          | `Normal` | Move cursor to Top buffer                |
 | `<Leader> j`          | `Normal` | Move cursor to bottom buffer             |
 | `ff`                  | `Normal` | Find files in the Project                |
-| `ss`                  | `Normal` | Find a string                            |
+| `<Leader> ss`         | `Normal` | Find a string                            |
 | `sl`                  | `Normal` | real-time search                         |
 | `<Leader> gs`         | `Normal` | Git status                               |
 | `<Leader> gc`         | `Normal` | Show commits                             |
@@ -66,5 +82,11 @@ Once neovim is installed, clone the repository to a directory of your choice.
 | `<Leader> yt`         | `Normal` | Open integrated terminal                 |
 | `<Leader> mp`         | `Normal` | View Markdown Preview                    |
 | `<C-bottom>` `<C-up>` | `Normal` | Multiple cursor                          |
+| `<Leader> sr`         | `Normal` | Open Search and Replace                  |
+| `<Leader> sw`         | `Normal` | Search Select Word                       |
+| `<Leader> qf`         | `Normal` | Send all item to quickfix                |
+| `<Leader> qs`         | `Normal` | Close Search and Replace                 |
+| `<Leader> <CR>`       | `Normal` | Replace Current Ocurrence                |
+| `<Leader> sf`         | `Normal` | Search in Current File                   |
 
 
