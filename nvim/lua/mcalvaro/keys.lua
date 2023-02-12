@@ -5,6 +5,14 @@ local map = vim.api.nvim_set_keymap
 -- Reasignar la clave utilizada para salir del modo de inserción
 map('i', 'jk', '<Esc>', {})
 
+-- Reasignar
+
+map('n', '<Leader>dc',[[d$]], {})
+
+map('n', '<Leader>css',[[ci"]], {})
+
+map('n', '<Leader>cs',[[ci']], {})
+
 -- Command exit nvim
 map('n', '<Leader>q', [[:q <CR>]], {} )
 
