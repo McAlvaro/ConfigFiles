@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
         requires = {'kyazdani42/nvim-web-devicons',
                 opt = true}
     }
-    -- use { 'xiyaowong/nvim-transparent' }
+    use { 'xiyaowong/nvim-transparent' }
 
     use { 'Mofiqul/dracula.nvim' }
     use ({'projekt0n/github-nvim-theme',tag = 'v0.0.7' })

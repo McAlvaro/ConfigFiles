@@ -13,6 +13,9 @@ map('n', '<Leader>css',[[ci"]], {})
 
 map('n', '<Leader>cs',[[ci']], {})
 
+-- Select all 
+map('n', '<C-A>', [[gg<S-v>G]],{})
+
 -- Command exit nvim
 map('n', '<Leader>q', [[:q <CR>]], {} )
 
@@ -143,3 +146,7 @@ map('n', '<Leader>qs', [[:q <CR>]], {} )                                        
 map('n', '<Leader><CR>', [[:lua require('spectre.actions').run_current_replace() <CR>]], {}) -- Replace Current Ocurrence
 
 map('n', '<Leader>sf', [[:lua require('spectre').open_file_search() <CR>]], {})              -- Search in Current File
+
+map('n', '<Leader>jj', [[:set conceallevel=0 <CR>]], {})                                    -- Display quotes in json file
+
+map('n', '<Leader>ji', [[:set conceallevel=1 <CR>]], {})                                    -- Hide the quotes in json file
