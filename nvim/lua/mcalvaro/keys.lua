@@ -16,6 +16,9 @@ map('n', '<Leader>cs',[[ci']], {})
 -- Select all 
 map('n', '<C-A>', [[gg<S-v>G]],{})
 
+-- Copy selected
+map('v', '<C-c>', [["+y]],{})
+
 -- Command exit nvim
 map('n', '<Leader>q', [[:q <CR>]], {} )
 
