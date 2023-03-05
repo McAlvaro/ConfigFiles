@@ -156,3 +156,5 @@ map('n', '<Leader>jj', [[:set conceallevel=0 <CR>]], {})                        
 map('n', '<Leader>ji', [[:set conceallevel=1 <CR>]], {})                                    -- Hide the quotes in json file
 
 map('n', '<Leader>wr', [[:%s/\s\+$//e <CR>]], {})                                           -- Remove whitespace at the end of a line
+
+map('n', '<Leader>cx', [[:lua cht() <CR>]], {})                                           -- help from CheatSheet

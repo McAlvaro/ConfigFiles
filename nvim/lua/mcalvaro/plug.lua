@@ -140,6 +140,7 @@ return require('packer').startup(function(use)
 
     use {"windwp/nvim-spectre"}                             -- Search and Replace
 
+    use {'stevearc/dressing.nvim'}
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

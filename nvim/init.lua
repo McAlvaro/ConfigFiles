@@ -75,3 +75,9 @@ require('gitsigns').setup{}
 
 require("toggleterm").setup{}
 
+-- Utils
+require('mcalvaro.utils.cheatsheet')
+
+require('dressing').setup{
+    input = { relative = "editor" }
+}
