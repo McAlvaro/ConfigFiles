@@ -79,5 +79,6 @@ require("toggleterm").setup{}
 require('mcalvaro.utils.cheatsheet')
 
 require('dressing').setup{
-    input = { relative = "editor" }
+    input = { relative = "editor" },
+    backend = { "telescope", "fzf_lua", "fzf", "builtin", "nui" }
 }
