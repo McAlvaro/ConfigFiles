@@ -2,6 +2,7 @@
 
 local opt = vim.opt
 local cmd = vim.api.nvim_command
+local autocmd = vim.api.nvim_create_autocmd
 
 --[[ Context ]]
 
@@ -41,4 +42,8 @@ opt.tabstop = 4				-- num: Cantidad de espacios que cuentan las pestañas
 opt.splitright = true			-- bool: Colocar la nueva ventana a la derecha de la actual
 opt.splitbelow = true			-- bool: Colocar nueva ventana debajo de la actual
 
-
+--[[ Remove Whitespace ]]
+-- autocmd('BufWritePre',{
+    -- pattern = '',
+    -- command = ":%s/\\s\\+$//e"
+-- })

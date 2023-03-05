@@ -13,7 +13,7 @@ map('n', '<Leader>css',[[ci"]], {})
 
 map('n', '<Leader>cs',[[ci']], {})
 
--- Select all 
+-- Select all
 map('n', '<C-A>', [[gg<S-v>G]],{})
 
 -- Copy selected
@@ -59,6 +59,7 @@ map('n', '<Leader>9', [[9gt]], {})
 -- Toggle vim-tree
 map('n', 'n', [[:NvimTreeToggle]], {})
 map('n', '<Leader>r', [[:NvimTreeRefresh <CR>]], {})
+map('n', '<Leader>n', [[:NvimTreeFindFile <CR>]], {})
 
 -- vim-tree move to nav files
 map('n', '<Leader>h', [[<C-w>h]], {})
@@ -153,3 +154,5 @@ map('n', '<Leader>sf', [[:lua require('spectre').open_file_search() <CR>]], {}) 
 map('n', '<Leader>jj', [[:set conceallevel=0 <CR>]], {})                                    -- Display quotes in json file
 
 map('n', '<Leader>ji', [[:set conceallevel=1 <CR>]], {})                                    -- Hide the quotes in json file
+
+map('n', '<Leader>wr', [[:%s/\s\+$//e <CR>]], {})                                           -- Remove whitespace at the end of a line

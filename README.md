@@ -31,55 +31,57 @@ brew install gnu-sed
 ## Shortcut
 
 
-| Comando               | Modo     | Acción                                                         | 
-| --------------------- | -------- | ---------------------------------------------------------------| 
-| `space`               |          | Leader                                                         | 
-| `jk`                  | `Insert` | Exit `Insert` Mode                                             | 
-| `w`                   | `Normal` | Jump to the beginning of the next word                         | 
-| `b`                   | `Normal` | Realize the inverse function of `w`                            | 
-| `e`                   | `Normal` | Jump to the end of the next word                               | 
-| `ge`                  | `Normal` | Realize the inverse function of `e`                            | 
-| `dw`                  | `Normal` | Delete Word                                                    | 
-| `x`                   | `Normal` | Delete Character                                               | 
-| `$`                   | `Normal` | Go to end of line                                              | 
-| `0`                   | `Normal` | Go to top of line                                              | 
-| `}`                   | `Normal` | Skips entire paragraphs from top to bottom                     | 
-| `{`                   | `Normal` | Realize the inverse function of `}`                            | 
-| `<C-D>`               | `Normal` | Move the file view half a page down                            | 
-| `<C-U>`               | `Normal` | Move the file view half page up                                | 
-| `gg`                  | `Normal` | Move the cursor to the beginning of the file                   | 
-| `{#line}gg`           | `Normal` | Move the cursor to the indicated line                          | 
-| `G`                   | `Normal` | Move the course to the end of the file                         | 
-| `{#word}w`            | `Normal` | Move cursor to beginning of word number                        | 
-| `{#word}e`            | `Normal` | Move cursor to end of word number                              | 
-| `{#word}y`            | `Normal` | Copy the number of following words                             | 
-| `y$`                  | `Normal` | Copy to end of line                                            | 
-| `yw`                  | `Normal` | Copy the current word                                          | 
-| `d{#word}w`           | `Normal` | Delete the number of following words                           | 
-| `d{#lines}j`          | `Normal` | Delete the number of lines down                                | 
-| `d{#lines}k`          | `Normal` | Delete the number of lines up                                  | 
-| `d`                   | `Normal` | Delete current line                                            | 
-| `.`                   | `Normal` | Repeat the last change made                                    | 
-| `da"`                 | `Normal` | Delete something between double quotes                         | 
-| `o`                   | `Normal` | Inserts a new line below the cursor location                   | 
-| `O`                   | `Normal` | Inserts a new line above the current line                      | 
-| `a`                   | `Normal` | Insert cursor after character                                  | 
-| `A`                   | `Normal` | Insert cursor at end of line                                   | 
-| `gi`                  | `Normal` | Starts the insertion mode at the last place where you left off | 
-| `<C-h>`               | `Insert` | Delete the last character typed                                | 
-| `<C-w>`               | `Insert` | Delete the last word written                                   | 
-| `<C-u>`               | `Insert` | Delete the last line written                                   | 
-| `v`                   | `Normal` | Starts the visual mode by character                            | 
-| `V`                   | `Normal` | Start line-by-line visual mode                                 | 
-| `u`                   | `Normal` | Undo last change                                               | 
-| `U`                   | `Normal` | Redo last change                                               | 
-| `r`                   | `Normal` | Replace the current character                                  | 
-| `ce`                  | `Normal` | Replace the current word                                       | 
-| `<Leader>cs`          | `Normal` | Change something between single quotes                         | 
-| `<Leader>css`         | `Normal` | Change something between double quotes                         | 
-| `<Leader>dc`          | `Normal` | Delete to end of line                                          | 
-| `<Leader> q`          | `Normal` | Exit Neovim                                                    | 
-| `<Leader> w`          | `Normal` | Save Changes                                                   | 
+| Comando               | Modo     | Acción                                                         |
+| --------------------- | -------- | ---------------------------------------------------------------|
+| `space`               |          | Leader                                                         |
+| `jk`                  | `Insert` | Exit `Insert` Mode                                             |
+| `w`                   | `Normal` | Jump to the beginning of the next word                         |
+| `b`                   | `Normal` | Realize the inverse function of `w`                            |
+| `e`                   | `Normal` | Jump to the end of the next word                               |
+| `ge`                  | `Normal` | Realize the inverse function of `e`                            |
+| `dw`                  | `Normal` | Delete Word                                                    |
+| `x`                   | `Normal` | Delete Character                                               |
+| `$`                   | `Normal` | Go to end of line                                              |
+| `0`                   | `Normal` | Go to top of line                                              |
+| `}`                   | `Normal` | Skips entire paragraphs from top to bottom                     |
+| `{`                   | `Normal` | Realize the inverse function of `}`                            |
+| `<C-D>`               | `Normal` | Move the file view half a page down                            |
+| `<C-U>`               | `Normal` | Move the file view half page up                                |
+| `gg`                  | `Normal` | Move the cursor to the beginning of the file                   |
+| `{#line}gg`           | `Normal` | Move the cursor to the indicated line                          |
+| `{#line}j`            | `Normal` | Move the cursor to the lower relative line number indicated    |
+| `{#line}k`            | `Normal` | Move the cursor to the upper relative line number indicated    |
+| `G`                   | `Normal` | Move the course to the end of the file                         |
+| `{#word}w`            | `Normal` | Move cursor to beginning of word number                        |
+| `{#word}e`            | `Normal` | Move cursor to end of word number                              |
+| `{#word}y`            | `Normal` | Copy the number of following words                             |
+| `y$`                  | `Normal` | Copy to end of line                                            |
+| `yw`                  | `Normal` | Copy the current word                                          |
+| `d{#word}w`           | `Normal` | Delete the number of following words                           |
+| `d{#lines}j`          | `Normal` | Delete the number of lines down                                |
+| `d{#lines}k`          | `Normal` | Delete the number of lines up                                  |
+| `d`                   | `Normal` | Delete current line                                            |
+| `.`                   | `Normal` | Repeat the last change made                                    |
+| `da"`                 | `Normal` | Delete something between double quotes                         |
+| `o`                   | `Normal` | Inserts a new line below the cursor location                   |
+| `O`                   | `Normal` | Inserts a new line above the current line                      |
+| `a`                   | `Normal` | Insert cursor after character                                  |
+| `A`                   | `Normal` | Insert cursor at end of line                                   |
+| `gi`                  | `Normal` | Starts the insertion mode at the last place where you left off |
+| `<C-h>`               | `Insert` | Delete the last character typed                                |
+| `<C-w>`               | `Insert` | Delete the last word written                                   |
+| `<C-u>`               | `Insert` | Delete the last line written                                   |
+| `v`                   | `Normal` | Starts the visual mode by character                            |
+| `V`                   | `Normal` | Start line-by-line visual mode                                 |
+| `u`                   | `Normal` | Undo last change                                               |
+| `U`                   | `Normal` | Redo last change                                               |
+| `r`                   | `Normal` | Replace the current character                                  |
+| `ce`                  | `Normal` | Replace the current word                                       |
+| `<Leader>cs`          | `Normal` | Change something between single quotes                         |
+| `<Leader>css`         | `Normal` | Change something between double quotes                         |
+| `<Leader>dc`          | `Normal` | Delete to end of line                                          |
+| `<Leader> q`          | `Normal` | Exit Neovim                                                    |
+| `<Leader> w`          | `Normal` | Save Changes                                                   |
 | `<Leader> wq`         | `Normal` | Save and exit Neovim                                           |
 | `<Leader> <Right>`    | `Normal` | Go to next Tab                                                 |
 | `<Leader> <Left>`     | `Normal` | Go to previus Tab                                              |
@@ -93,6 +95,8 @@ brew install gnu-sed
 | `<Leader> 8`          | `Normal` | Go to Tab 8                                                    |
 | `<Leader> 9`          | `Normal` | Go to Tab 9                                                    |
 | `n`                   | `Normal` | Open file explorer                                             |
+| `<Leader>n`           | `Normal` | Open file explorer with focus on the open file                 |
+| `<Leader>wr`          | `Normal` | Remove whitespace at the end of a line                         |
 | `<Leader> r`          | `Normal` | Reload browser                                                 |
 | `<Leader> h`          | `Normal` | Move cursor to left buffer                                     |
 | `<Leader> l`          | `Normal` | Move cursor to right buffer                                    |
