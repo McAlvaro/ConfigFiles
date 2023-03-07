@@ -141,6 +141,30 @@ return require('packer').startup(function(use)
     use {"windwp/nvim-spectre"}                             -- Search and Replace
 
     use {'stevearc/dressing.nvim'}
+
+    use {
+      "tpope/vim-dadbod",
+      -- opt = true,
+      requires = {
+        "kristijanhusak/vim-dadbod-ui",
+        "kristijanhusak/vim-dadbod-completion",
+        --[[ "abenz1267/nvim-databasehelper", ]]
+      },
+      config = function()
+        require("utils.dadbod").setup()
+      end,
+      -- cmd = { "DBUIToggle", "DBUI", "DBUIAddConnection", "DBUIFindBuffer", "DBUIRenameBuffer", "DBUILastQueryInfo" },
+    }
+    use {
+      "iamcco/markdown-preview.nvim",
+      -- opt = true,
+      run = function()
+        vim.fn["mkdp#util#install"]()
+      end,
+      -- ft = "markdown",
+      -- cmd = { "MarkdownPreview" },
+      requires = { "zhaozg/vim-diagram", "aklt/plantuml-syntax" },
+    }
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

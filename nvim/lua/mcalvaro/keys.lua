@@ -136,7 +136,9 @@ map('t', '<Leader>qtt', [[<C-\><C-N><CR> :ToggleTerm <CR>]], {})
 
 map('n', '<Leader>yt', [[:ToggleTerm <CR> ]], {})
 
-map('n', '<Leader>mp', [[:Glow <CR>]], {})                                          --Markdown Preview
+map('n', '<Leader>mp', [[:MarkdownPreview <CR>]], {})                                          --Markdown Preview
+
+map('n', '<Leader>ms', [[:MarkdownPreviewStop <CR>]], {})                                          --Markdown Preview Stop
 
 -- Spectre keymaps - Search and Replace
 map('n', '<Leader>sr', [[:lua require('spectre').open() <CR>]], {})                      -- Open Search and Replace
@@ -157,4 +159,6 @@ map('n', '<Leader>ji', [[:set conceallevel=1 <CR>]], {})                        
 
 map('n', '<Leader>wr', [[:%s/\s\+$//e <CR>]], {})                                           -- Remove whitespace at the end of a line
 
-map('n', '<Leader>cx', [[:lua cht() <CR>]], {})                                           -- help from CheatSheet
+map('n', '<Leader>cx', [[:lua cht() <CR>]], {})                                             -- help from CheatSheet
+
+map('n', '<Leader>ee', [[:vsp .env <CR>]], {})                                              -- Open .env File

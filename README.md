@@ -128,6 +128,7 @@ brew install gnu-sed
 | `<Leader> qtt`        | `Normal` | Exit and close integrated terminal                             |
 | `<Leader> yt`         | `Normal` | Open integrated terminal                                       |
 | `<Leader> mp`         | `Normal` | View Markdown Preview                                          |
+| `<Leader> ms`         | `Normal` | View Markdown Preview Stop                                     |
 | `<C-bottom>` `<C-up>` | `Normal` | Multiple cursor                                                |
 | `<Leader> sr`         | `Normal` | Open Search and Replace                                        |
 | `<Leader> sw`         | `Normal` | Search Select Word                                             |
@@ -135,5 +136,6 @@ brew install gnu-sed
 | `<Leader> qs`         | `Normal` | Close Search and Replace                                       |
 | `<Leader> <CR>`       | `Normal` | Replace Current Ocurrence                                      |
 | `<Leader> sf`         | `Normal` | Search in Current File                                         |
+| `<Leader> ee`         | `Normal` | Open .env file                                                 |
 
 
