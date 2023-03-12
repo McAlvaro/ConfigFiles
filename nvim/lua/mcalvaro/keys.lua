@@ -162,3 +162,7 @@ map('n', '<Leader>wr', [[:%s/\s\+$//e <CR>]], {})                               
 map('n', '<Leader>cx', [[:lua cht() <CR>]], {})                                             -- help from CheatSheet
 
 map('n', '<Leader>ee', [[:vsp .env <CR>]], {})                                              -- Open .env File
+
+map('n', '<Leader>gt', [[:tab Git <CR>]], {})                                              -- Open Git Tab
+
+map('n', '<Leader>db', [[:tab DBUI <CR>]], {})                                              -- Open DBUI Tab
