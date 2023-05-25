@@ -66,6 +66,13 @@ Once neovim is installed, clone the repository to a directory of your choice.
 | `<Leader> yt`         | `Normal` | Open integrated terminal                 |
 | `<Leader> mp`         | `Normal` | View Markdown Preview                    |
 | `<C-bottom>` `<C-up>` | `Normal` | Multiple cursor                          |
+| `<Leader> sr`         | `Normal` | Open Search and Replace                  |
+| `<Leader> sw`         | `Normal` | Search Select Word                       |
+| `<Leader> qf`         | `Normal` | Send all item to quickfix                |
+| `<Leader> qs`         | `Normal` | Close Search and Replace                 |
+| `<Leader> <CR>`       | `Normal` | Replace Current Ocurrence                |
+| `<Leader> sf`         | `Normal` | Search in Current File                   |
+| `<Leader> ee`         | `Normal` | Open .env file                           |
 | `<C-k>`               | `Normal` | Move current line to Up                  |
 | `<C-j>`               | `Normal` | Move current line to Bottom              |
 | `<C-k>`               | `Insert` | Move current line to Up                  |

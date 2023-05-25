@@ -137,5 +137,15 @@ brew install gnu-sed
 | `<Leader> <CR>`       | `Normal` | Replace Current Ocurrence                                      |
 | `<Leader> sf`         | `Normal` | Search in Current File                                         |
 | `<Leader> ee`         | `Normal` | Open .env file                                                 |
+| `<C-k>`               | `Normal` | Move current line to Up                                        |
+| `<C-j>`               | `Normal` | Move current line to Bottom                                    |
+| `<C-k>`               | `Insert` | Move current line to Up                                        |
+| `<C-j>`               | `Insert` | Move current line to Bottom                                    |
+| `<C-k>`               | `Visual` | Move current line to Up                                        |
+| `<C-j>`               | `Visual` | Move current line to Bottom                                    |
+| `<Leader>bn`          | `Normal` | Go to next Buffer                                              |
+| `<Leader>bb`          | `Normal` | Go to previus Buffer                                           |
+| `<Leader>cv`          | `Normal` | Split current buffer in Vertical                               |
+| `<Leader>ch`          | `Normal` | Split current buffer in Horizaontal                            |
 
 
