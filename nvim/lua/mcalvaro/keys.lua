@@ -187,7 +187,7 @@ map('n', '<Leader>db', [[:tab DBUI <CR>]], {})                                  
 
 map('n', '<Leader>bn', [[:bn <CR>]], {})                                                         -- Move to Next Buffer
 
-map('n', '<Leader>bb', [[:bn <CR>]], {})                                                         -- Move to Prev Buffer
+map('n', '<Leader>bb', [[:bp <CR>]], {})                                                         -- Move to Prev Buffer
 
 map('n', '<Leader>cv', [[<C-w>v]], {})                                                         -- Vertical split current buffer
 
