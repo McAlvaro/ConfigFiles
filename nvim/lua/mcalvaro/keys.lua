@@ -30,6 +30,24 @@ map('n', '<Leader>w', [[:w <CR>]], {})
 -- Command save and exit
 map('n', '<Leader>wq', '[[:wq <CR>]]', {})
 
+-- Move current line to up
+map('n', '<C-k>', [[:m .-2 <CR>==]], {})
+
+-- Move current line to boottom
+map('n', '<C-j>', [[:m .+1 <CR>==]], {})
+
+-- Move current line to boottom
+map('i', '<C-j>', [[<Esc>:m .+1 <CR>==gi]], {})
+
+-- Move current line to up
+map('i', '<C-k>', [[<Esc>:m .-2 <CR>==gi]], {})
+
+-- Move current line to up
+map('v', '<C-j>', [[:m '>+1<CR>gv=gv]], {})
+
+-- Move current line to up
+map('v', '<C-k>', [[:m '<-2<CR>gv=gv]], {})
+
 -- Navigate to Tabs
 map('n', '<Leader><Right>', [[gt]], {})
 
@@ -166,3 +184,12 @@ map('n', '<Leader>ee', [[:vsp .env <CR>]], {})                                  
 map('n', '<Leader>gt', [[:tab Git <CR>]], {})                                              -- Open Git Tab
 
 map('n', '<Leader>db', [[:tab DBUI <CR>]], {})                                              -- Open DBUI Tab
+
+map('n', '<Leader>bn', [[:bn <CR>]], {})                                                         -- Move to Next Buffer
+
+map('n', '<Leader>bb', [[:bn <CR>]], {})                                                         -- Move to Prev Buffer
+
+map('n', '<Leader>cv', [[<C-w>v]], {})                                                         -- Vertical split current buffer
+
+map('n', '<Leader>ch', [[<C-w>s]], {})                                                         -- Horizontal split current buffer
+

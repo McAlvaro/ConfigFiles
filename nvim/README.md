@@ -66,4 +66,14 @@ Once neovim is installed, clone the repository to a directory of your choice.
 | `<Leader> yt`         | `Normal` | Open integrated terminal                 |
 | `<Leader> mp`         | `Normal` | View Markdown Preview                    |
 | `<C-bottom>` `<C-up>` | `Normal` | Multiple cursor                          |
+| `<C-k>`               | `Normal` | Move current line to Up                  |
+| `<C-j>`               | `Normal` | Move current line to Bottom              |
+| `<C-k>`               | `Insert` | Move current line to Up                  |
+| `<C-j>`               | `Insert` | Move current line to Bottom              |
+| `<C-k>`               | `Visual` | Move current line to Up                  |
+| `<C-j>`               | `Visual` | Move current line to Bottom              |
+| `<Leader>bn`          | `Normal` | Go to next Buffer                        |
+| `<Leader>bb`          | `Normal` | Go to previus Buffer                     |
+| `<Leader>cv`          | `Normal` | Split current buffer in Vertical         |
+| `<Leader>ch`          | `Normal` | Split current buffer in Horizaontal      |
 
