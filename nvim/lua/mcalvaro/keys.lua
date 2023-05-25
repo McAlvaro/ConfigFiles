@@ -193,3 +193,5 @@ map('n', '<Leader>cv', [[<C-w>v]], {})                                          
 
 map('n', '<Leader>ch', [[<C-w>s]], {})                                                         -- Horizontal split current buffer
 
+map('n', '<Leader>sx', [[:SwaggerPreviewToggle <CR>]], {})                                      -- Swagger Preview on port: 8000 and stop Preview  
+

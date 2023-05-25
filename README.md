@@ -146,6 +146,7 @@ brew install gnu-sed
 | `<Leader>bn`          | `Normal` | Go to next Buffer                                              |
 | `<Leader>bb`          | `Normal` | Go to previus Buffer                                           |
 | `<Leader>cv`          | `Normal` | Split current buffer in Vertical                               |
-| `<Leader>ch`          | `Normal` | Split current buffer in Horizaontal                            |
+| `<Leader>ch`          | `Normal` | Split current buffer in Horizontal                             |
+| `<Leader>sx`          | `Normal` | Start/Stop Swagger live preview                                |
 
 

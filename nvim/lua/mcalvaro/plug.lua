@@ -165,6 +165,10 @@ return require('packer').startup(function(use)
       -- cmd = { "MarkdownPreview" },
       requires = { "zhaozg/vim-diagram", "aklt/plantuml-syntax" },
     }
+    use {
+      "vinnymeller/swagger-preview.nvim",
+      run = "npm install -g swagger-ui-watcher",
+    }
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"
