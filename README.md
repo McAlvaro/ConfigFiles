@@ -148,5 +148,6 @@ brew install gnu-sed
 | `<Leader>cv`          | `Normal` | Split current buffer in Vertical                               |
 | `<Leader>ch`          | `Normal` | Split current buffer in Horizontal                             |
 | `<Leader>sx`          | `Normal` | Start/Stop Swagger live preview                                |
+| `<Leader>nv`          | `Normal` | Open Navbuddy in current file                                  |
 
 

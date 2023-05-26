@@ -195,3 +195,5 @@ map('n', '<Leader>ch', [[<C-w>s]], {})                                          
 
 map('n', '<Leader>sx', [[:SwaggerPreviewToggle <CR>]], {})                                      -- Swagger Preview on port: 8000 and stop Preview  
 
+map('n', '<Leader>nv', [[:Navbuddy <CR>]], {})                                      -- Open Navbuddy
+

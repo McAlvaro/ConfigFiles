@@ -19,6 +19,7 @@ require('mcalvaro.completation')     -- LSP
 require('mcalvaro.bufferline.setup')     -- Setup BufferLine 
 require('mcalvaro.hlargs.setup')        -- Setup Hlargs 
 require('mcalvaro.swagger-preview.setup')        -- Swagger preview 
+require('mcalvaro.navbuddy.setup')        -- Swagger preview 
 
 -- PLUGINS: Add this section
 require('nvim-tree').setup{}
