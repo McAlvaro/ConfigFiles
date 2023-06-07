@@ -199,6 +199,9 @@ map('n', '<Leader>sx', [[:SwaggerPreviewToggle <CR>]], {})                      
 
 map('n', '<Leader>nv', [[:Navbuddy <CR>]], {})                                      -- Open Navbuddy
 
-map('n', '<Leader>wa', [[:lua SaveAs() <CR>]], {})                                      -- Open Navbuddy
-map('n', '<Leader>sa', [[:lua file_browser_relative() <CR>]], {})                                      -- Open Navbuddy
+map('n', '<Leader>wa', [[:lua SaveAs() <CR>]], {})                                      -- Save as current file
+
+map('n', '<Leader>sa', [[:lua file_browser_relative() <CR>]], {})                                      -- Save as current file with Telescope
+
+map('n', '<Leader>gg', [[:LazyGit <CR>]], {})                                      -- Open LazyGit
 
