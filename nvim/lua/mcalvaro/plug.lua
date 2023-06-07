@@ -178,8 +178,10 @@ return require('packer').startup(function(use)
         "MunifTanjim/nui.nvim",
         "numToStr/Comment.nvim",        -- Optional
         "nvim-telescope/telescope.nvim" -- Optional
+        }
     }
-}
+
+
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"

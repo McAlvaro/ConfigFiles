@@ -13,6 +13,8 @@ map('n', '<Leader>css',[[ci"]], {})
 
 map('n', '<Leader>cs',[[ci']], {})
 
+map('n', '<Leader>ci',[[ci(]], {})
+
 -- Select all
 map('n', '<C-A>', [[gg<S-v>G]],{})
 
@@ -196,4 +198,7 @@ map('n', '<Leader>ch', [[<C-w>s]], {})                                          
 map('n', '<Leader>sx', [[:SwaggerPreviewToggle <CR>]], {})                                      -- Swagger Preview on port: 8000 and stop Preview  
 
 map('n', '<Leader>nv', [[:Navbuddy <CR>]], {})                                      -- Open Navbuddy
+
+map('n', '<Leader>wa', [[:lua SaveAs() <CR>]], {})                                      -- Open Navbuddy
+map('n', '<Leader>sa', [[:lua file_browser_relative() <CR>]], {})                                      -- Open Navbuddy
 

@@ -80,8 +80,12 @@ require("toggleterm").setup{}
 
 -- Utils
 require('mcalvaro.utils.cheatsheet')
+require('mcalvaro.utils.saveas')
+require('mcalvaro.utils.telescopefb')
 
 require('dressing').setup{
     input = { relative = "editor" },
     backend = { "telescope", "fzf_lua", "fzf", "builtin", "nui" }
 }
+
+require('telescope').load_extension "file_browser"
