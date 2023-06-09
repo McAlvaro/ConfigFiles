@@ -149,5 +149,7 @@ brew install gnu-sed
 | `<Leader>ch`          | `Normal` | Split current buffer in Horizontal                             |
 | `<Leader>sx`          | `Normal` | Start/Stop Swagger live preview                                |
 | `<Leader>nv`          | `Normal` | Open Navbuddy in current file                                  |
+| `<Leader>sa`          | `Normal` | Save as current file with Telescope                            |
+| `<Leader>gg`          | `Normal` | Open LazyGit                                                   |
 
 

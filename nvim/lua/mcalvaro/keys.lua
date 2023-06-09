@@ -156,18 +156,18 @@ map('t', '<Leader>qtt', [[<C-\><C-N><CR> :ToggleTerm <CR>]], {})
 
 map('n', '<Leader>yt', [[:ToggleTerm <CR> ]], {})
 
-map('n', '<Leader>mp', [[:MarkdownPreview <CR>]], {})                                          --Markdown Preview
+map('n', '<Leader>mp', [[:MarkdownPreview <CR>]], {})                                        --Markdown Preview
 
-map('n', '<Leader>ms', [[:MarkdownPreviewStop <CR>]], {})                                          --Markdown Preview Stop
+map('n', '<Leader>ms', [[:MarkdownPreviewStop <CR>]], {})                                    --Markdown Preview Stop
 
 -- Spectre keymaps - Search and Replace
-map('n', '<Leader>sr', [[:lua require('spectre').open() <CR>]], {})                      -- Open Search and Replace
+map('n', '<Leader>sr', [[:lua require('spectre').open() <CR>]], {})                          -- Open Search and Replace
 
 map('n', '<Leader>sw', [[:lua require('spectre').open_visual({select_word=true}) <CR>]], {}) -- Search Select Word
 
-map('n', '<Leader>qf', [[:lua require('spectre.actions').send_to_qf() <CR>]], {})           -- send all item to quickfix
+map('n', '<Leader>qf', [[:lua require('spectre.actions').send_to_qf() <CR>]], {})            -- send all item to quickfix
 
-map('n', '<Leader>qs', [[:q <CR>]], {} )                                                    -- Close Search and Replace
+map('n', '<Leader>qs', [[:q <CR>]], {} )                                                     -- Close Search and Replace
 
 map('n', '<Leader><CR>', [[:lua require('spectre.actions').run_current_replace() <CR>]], {}) -- Replace Current Ocurrence
 
@@ -183,25 +183,25 @@ map('n', '<Leader>cx', [[:lua cht() <CR>]], {})                                 
 
 map('n', '<Leader>ee', [[:vsp .env <CR>]], {})                                              -- Open .env File
 
-map('n', '<Leader>gt', [[:tab Git <CR>]], {})                                              -- Open Git Tab
+map('n', '<Leader>gt', [[:tab Git <CR>]], {})                                               -- Open Git Tab
 
 map('n', '<Leader>db', [[:tab DBUI <CR>]], {})                                              -- Open DBUI Tab
 
-map('n', '<Leader>bn', [[:bn <CR>]], {})                                                         -- Move to Next Buffer
+map('n', '<Leader>bn', [[:bn <CR>]], {})                                                    -- Move to Next Buffer
 
-map('n', '<Leader>bb', [[:bp <CR>]], {})                                                         -- Move to Prev Buffer
+map('n', '<Leader>bb', [[:bp <CR>]], {})                                                    -- Move to Prev Buffer
 
-map('n', '<Leader>cv', [[<C-w>v]], {})                                                         -- Vertical split current buffer
+map('n', '<Leader>cv', [[<C-w>v]], {})                                                      -- Vertical split current buffer
 
-map('n', '<Leader>ch', [[<C-w>s]], {})                                                         -- Horizontal split current buffer
+map('n', '<Leader>ch', [[<C-w>s]], {})                                                      -- Horizontal split current buffer
 
-map('n', '<Leader>sx', [[:SwaggerPreviewToggle <CR>]], {})                                      -- Swagger Preview on port: 8000 and stop Preview  
+map('n', '<Leader>sx', [[:SwaggerPreviewToggle <CR>]], {})                                  -- Swagger Preview on port: 8000 and stop Preview  
 
-map('n', '<Leader>nv', [[:Navbuddy <CR>]], {})                                      -- Open Navbuddy
+map('n', '<Leader>nv', [[:Navbuddy <CR>]], {})                                              -- Open Navbuddy
 
-map('n', '<Leader>wa', [[:lua SaveAs() <CR>]], {})                                      -- Save as current file
+map('n', '<Leader>wa', [[:lua SaveAs() <CR>]], {})                                          -- Save as current file
 
-map('n', '<Leader>sa', [[:lua file_browser_relative() <CR>]], {})                                      -- Save as current file with Telescope
+map('n', '<Leader>sa', [[:lua file_browser_relative() <CR>]], {})                           -- Save as current file with Telescope
 
-map('n', '<Leader>gg', [[:LazyGit <CR>]], {})                                      -- Open LazyGit
+map('n', '<Leader>gg', [[:LazyGit <CR>]], {})                                               -- Open LazyGit
 
