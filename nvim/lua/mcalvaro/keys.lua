@@ -123,7 +123,7 @@ map('n', '<Leader>i', [[:lua vim.lsp.buf.hover() <CR>]], {})                    
 
 map('n', '<Leader>gr', [[:lua vim.lsp.buf.rename() <CR>]], {})                       -- Rename
 
-map('n', '<Leader>gf', [[:lua vim.lsp.buf.formatting() <CR>]], {})                   --Fomart
+map('n', '<Leader>gf', [[:lua vim.lsp.buf.format{ async = true} <CR>]], {})                   --Fomart
 
 map('n', '<Leader>gn', [[:lua vim.diagnostic.goto_next() <CR>]], {})                 --Next
 
