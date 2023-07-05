@@ -205,3 +205,13 @@ map('n', '<Leader>sa', [[:lua file_browser_relative() <CR>]], {})               
 
 map('n', '<Leader>gg', [[:LazyGit <CR>]], {})                                               -- Open LazyGit
 
+map('n', '<Leader>xx', [[:RunCode <CR>]], {})                                                -- Run Current Code
+
+map('n', '<Leader>xf', [[:RunFile <CR>]], {})                                               -- Run Current File
+
+map('n', '<Leader>xt', [[:RunFile tab<CR>]], {})                                            -- Run Current File in Tab
+
+map('n', '<Leader>xp', [[:RunProject tab<CR>]], {})                                            -- Run Current File in Tab
+
+map('n', '<Leader>xc', [[:RunClose <CR>]], {})                                              -- Close Run Code
+

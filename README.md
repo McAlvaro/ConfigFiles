@@ -151,5 +151,10 @@ brew install gnu-sed
 | `<Leader>nv`          | `Normal` | Open Navbuddy in current file                                  |
 | `<Leader>sa`          | `Normal` | Save as current file with Telescope                            |
 | `<Leader>gg`          | `Normal` | Open LazyGit                                                   |
+| `<Leader>xx`          | `Normal` | Run current code                                               |
+| `<Leader>xf`          | `Normal` | Run current File                                               |
+| `<Leader>xt`          | `Normal` | Run current File in new Tab                                    |
+| `<Leader>xp`          | `Normal` | Run current Project in new Tab                                 |
+| `<Leader>xc`          | `Normal` | Close Run Code Terminal                                        |
 
 
