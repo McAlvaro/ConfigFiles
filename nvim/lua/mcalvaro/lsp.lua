@@ -1,4 +1,3 @@
---local telescope_mapper = require("alpha.telescope.mappings")
 
 local filetype_attach = setmetatable({
 	go = function(_)

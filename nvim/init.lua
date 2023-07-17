@@ -23,7 +23,9 @@ require('mcalvaro.navbuddy.setup')        -- Swagger preview
 require('mcalvaro.code-runner.setup')     -- Code Runner
 
 -- PLUGINS: Add this section
-require('nvim-tree').setup{}
+require('nvim-tree').setup{
+    disable_netrw = true,
+}
 
 -- Config Line Info
 

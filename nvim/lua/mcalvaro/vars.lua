@@ -15,6 +15,10 @@ local packer_path = vim.fn.stdpath('config') .. '/site'
 vim.o.packpath = vim.o.packpath .. ',' .. packer_path
 
 g.python3_host_prog = vim.fn.getcwd() .. '/.venv/bin/python3'
+
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1
+
 -- Theme Custom Colors
 -- g.dracula_colors = {
 --    bg = "#2b2b2b",

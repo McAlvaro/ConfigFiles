@@ -42,6 +42,8 @@ opt.tabstop = 4				-- num: Cantidad de espacios que cuentan las pestañas
 opt.splitright = true			-- bool: Colocar la nueva ventana a la derecha de la actual
 opt.splitbelow = true			-- bool: Colocar nueva ventana debajo de la actual
 
+cmd([[autocmd VimEnter * NvimTreeClose]]) -- Close NvimTree on init Noevim
+
 --[[ Remove Whitespace ]]
 -- autocmd('BufWritePre',{
     -- pattern = '',
