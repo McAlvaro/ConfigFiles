@@ -1,5 +1,9 @@
 -- [[ plug.lua ]]
 
+if require("mcalvaro.utils.packer_install")() then
+	return
+end
+
 return require('packer').startup(function(use)
     -- [[ Plugins Go Here ]]
     use {
