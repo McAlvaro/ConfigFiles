@@ -14,13 +14,15 @@ require('mcalvaro.vars')	-- Variables
 require('mcalvaro.opts')	-- Opciones
 require('mcalvaro.keys')    -- Mapeo de teclas
 require('mcalvaro.plug')	-- Plugins
-require('mcalvaro.lsp')     -- LSP 
+-- require('mcalvaro.lsp')     -- LSP 
+require('mcalvaro.mason')     -- LSP 
 require('mcalvaro.completation')     -- LSP 
 require('mcalvaro.bufferline.setup')     -- Setup BufferLine 
 require('mcalvaro.hlargs.setup')        -- Setup Hlargs 
 require('mcalvaro.swagger-preview.setup')        -- Swagger preview 
 require('mcalvaro.navbuddy.setup')        -- Swagger preview 
 require('mcalvaro.code-runner.setup')     -- Code Runner
+require('mcalvaro.dap')     -- Code Runner
 
 -- PLUGINS: Add this section
 require('nvim-tree').setup{

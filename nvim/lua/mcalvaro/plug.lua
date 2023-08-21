@@ -198,6 +198,50 @@ return require('packer').startup(function(use)
     }
     use 'CRAG666/code_runner.nvim'
 
+    -- MASON
+	use({
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+	})
+
+    use({"adalessa/composer.nvim"})
+    use({"McAlvaro/php-code-actions.nvim"})
+
+
+    use({
+      "mfussenegger/nvim-dap",
+      requires = {
+        "theHamsta/nvim-dap-virtual-text",
+        "rcarriga/nvim-dap-ui",
+        "leoluz/nvim-dap-go",
+        "mxsdev/nvim-dap-vscode-js",
+        "anuvyklack/hydra.nvim",
+        "nvim-telescope/telescope-dap.nvim",
+        "rcarriga/cmp-dap",
+      },
+      keys = { { "<leader>d", desc = "Open Debug menu" } },
+      config = function()
+        require "mcalvaro.dap"
+        local ok_telescope, telescope = pcall(require, "telescope")
+        if ok_telescope then
+          telescope.load_extension "dap"
+        end
+
+        local ok_cmp, cmp = pcall(require, "cmp")
+        if ok_cmp then
+          cmp.setup.filetype({ "dap-repl", "dapui_watches" }, {
+            sources = cmp.config.sources({
+              { name = "dap" },
+            }, {
+              { name = "buffer" },
+            }),
+          })
+        end
+      end,
+    })
+
 end)
 --config = {
     --package_root = vim.fn.stdpath('config') .. "/site/pack"
