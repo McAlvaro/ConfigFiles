@@ -118,7 +118,7 @@ map('n', '<Leader>uu', [[:UndotreeToggle <CR>]], {})
 
 -- LSP Keymaps
 -- map('n', '<Leader>gd', [[:lua vim.lsp.buf.definition() <CR>]], {})                   --Go Definition
-map('n', '<Leader>gd', [[:Telescope lsp_type_definitions  <CR>]], {})                   --Go Definition
+map('n', '<Leader>gd', [[<C-]>]], {})                   --Go Definition
 
 map('n', '<Leader>i', [[:lua vim.lsp.buf.hover() <CR>]], {})                         --Show Info
 
@@ -136,7 +136,7 @@ map('n', '<Leader>gh', [[:lua vim.lsp.buf.signature_help() <CR>]], {})          
 
 map('n', 'RR', [[:LspRestart <CR>]], {})        --Restart LSP
 
-map('n', '<Leader>gt', [[:lua vim.lsp.buf.type_definition() <CR>]], {})             --Type Definition
+map('n', '<Leader>gtt', [[:Telescope lsp_type_definitions  <CR>]], {})             --Type Definition
 
 map('n', '<Leader>rf', [[:lua vim.lsp.buf.references() <CR>]], {})                  --References
 

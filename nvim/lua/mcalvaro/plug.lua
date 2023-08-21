@@ -64,7 +64,7 @@ return require('packer').startup(function(use)
 
     -- [[LSP]]
     use {
-        'neovim/nvim-lspconfig',
+        -- 'neovim/nvim-lspconfig',
         'williamboman/nvim-lsp-installer',
         'hrsh7th/cmp-nvim-lsp-signature-help',
         'ray-x/lsp_signature.nvim'
@@ -146,19 +146,19 @@ return require('packer').startup(function(use)
 
     use {'stevearc/dressing.nvim'}
 
-    use {
-      "tpope/vim-dadbod",
-      -- opt = true,
-      requires = {
-        "kristijanhusak/vim-dadbod-ui",
-        "kristijanhusak/vim-dadbod-completion",
-        --[[ "abenz1267/nvim-databasehelper", ]]
-      },
-      config = function()
-        require("utils.dadbod").setup()
-      end,
-      -- cmd = { "DBUIToggle", "DBUI", "DBUIAddConnection", "DBUIFindBuffer", "DBUIRenameBuffer", "DBUILastQueryInfo" },
-    }
+    --use {
+    --  "tpope/vim-dadbod",
+    --  -- opt = true,
+    --  requires = {
+    --    "kristijanhusak/vim-dadbod-ui",
+    --    "kristijanhusak/vim-dadbod-completion",
+    --    --[[ "abenz1267/nvim-databasehelper", ]]
+    --  },
+    --  config = function()
+    --    require("utils.dadbod").setup()
+    --  end,
+    --  -- cmd = { "DBUIToggle", "DBUI", "DBUIAddConnection", "DBUIFindBuffer", "DBUIRenameBuffer", "DBUILastQueryInfo" },
+    --}
     use {
       "iamcco/markdown-preview.nvim",
       -- opt = true,
@@ -210,6 +210,15 @@ return require('packer').startup(function(use)
     use({"McAlvaro/php-code-actions.nvim"})
 
 
+    use ({
+    "rcarriga/cmp-dap",
+    dependencies = "hrsh7th/nvim-cmp",
+    event = [[InsertEnter *dap-repl*,DAP\ Watches,DAP\ Hover]],
+    config = function()
+      require("cmp").setup.filetype({ "dap-repl", "dapui_watches", "dapui_hover" }, { sources = { { name = "dap" } } })
+    end,
+  })
+
     use({
       "mfussenegger/nvim-dap",
       requires = {
@@ -223,7 +232,7 @@ return require('packer').startup(function(use)
       },
       keys = { { "<leader>d", desc = "Open Debug menu" } },
       config = function()
-        require "mcalvaro.dap"
+        -- require "mcalvaro.dap"
         local ok_telescope, telescope = pcall(require, "telescope")
         if ok_telescope then
           telescope.load_extension "dap"

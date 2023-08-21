@@ -22,7 +22,7 @@ require('mcalvaro.hlargs.setup')        -- Setup Hlargs
 require('mcalvaro.swagger-preview.setup')        -- Swagger preview 
 require('mcalvaro.navbuddy.setup')        -- Swagger preview 
 require('mcalvaro.code-runner.setup')     -- Code Runner
-require('mcalvaro.dap')     -- Code Runner
+-- require('mcalvaro.dap')     -- Code Runner
 
 -- PLUGINS: Add this section
 require('nvim-tree').setup{
