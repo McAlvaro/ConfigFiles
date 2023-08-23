@@ -210,46 +210,68 @@ return require('packer').startup(function(use)
     use({"McAlvaro/php-code-actions.nvim"})
 
 
-    use ({
-    "rcarriga/cmp-dap",
-    dependencies = "hrsh7th/nvim-cmp",
-    event = [[InsertEnter *dap-repl*,DAP\ Watches,DAP\ Hover]],
-    config = function()
-      require("cmp").setup.filetype({ "dap-repl", "dapui_watches", "dapui_hover" }, { sources = { { name = "dap" } } })
-    end,
-  })
+  use({
+        "mfussenegger/nvim-dap",
+        requires = {
+          "jay-babu/mason-nvim-dap.nvim",
+          config = function() require("mason-nvim-dap").setup({ ensure_installed = { "firefox", "node2" } }) end,
+                "theHamsta/nvim-dap-virtual-text",
+                "rcarriga/nvim-dap-ui",
+                "leoluz/nvim-dap-go",
+                "mxsdev/nvim-dap-vscode-js",
+                "anuvyklack/hydra.nvim",
+                "nvim-telescope/telescope-dap.nvim",
+                "rcarriga/cmp-dap",
 
-    use({
-      "mfussenegger/nvim-dap",
-      requires = {
-        "theHamsta/nvim-dap-virtual-text",
-        "rcarriga/nvim-dap-ui",
-        "leoluz/nvim-dap-go",
-        "mxsdev/nvim-dap-vscode-js",
-        "anuvyklack/hydra.nvim",
-        "nvim-telescope/telescope-dap.nvim",
-        "rcarriga/cmp-dap",
-      },
-      keys = { { "<leader>d", desc = "Open Debug menu" } },
-      config = function()
-        -- require "mcalvaro.dap"
-        local ok_telescope, telescope = pcall(require, "telescope")
-        if ok_telescope then
-          telescope.load_extension "dap"
+        },
+        keys = {
+          { "<leader>d", desc = "Open Debug menu" },
+        },
+        cmd = {
+          "DapContinue",
+          "DapLoadLaunchJSON",
+          "DapRestartFrame",
+          "DapSetLogLevel",
+          "DapShowLog",
+          "DapStepInto",
+          "DapStepOut",
+          "DapStepOver",
+          "DapTerminate",
+          "DapToggleBreakpoint",
+          "DapToggleRepl",
+        },
+        config = function ()
+            require('mcalvaro.dap')
+            local ok_telescope, telescope = pcall(require, "telescope")
+            if ok_telescope then
+              telescope.load_extension "dap"
+            end
+
+            local ok_cmp, cmp = pcall(require, "cmp")
+                if ok_cmp then
+                  cmp.setup.filetype({ "dap-repl", "dapui_watches" }, {
+                    sources = cmp.config.sources({
+                      { name = "dap" },
+                    }, {
+                      { name = "buffer" },
+                    }),
+                  })
+                end
+
+
         end
 
-        local ok_cmp, cmp = pcall(require, "cmp")
-        if ok_cmp then
-          cmp.setup.filetype({ "dap-repl", "dapui_watches" }, {
-            sources = cmp.config.sources({
-              { name = "dap" },
-            }, {
-              { name = "buffer" },
-            }),
-          })
-        end
-      end,
+
+
+
     })
+
+    use ({
+      "mrjones2014/smart-splits.nvim",
+      optional = true,
+      opts = function(_, opts) opts.ignored_filetypes = vim.list_extend(opts.ignored_filetypes or {}, { "dapui_hover" }) end,
+    })
+
 
 end)
 --config = {

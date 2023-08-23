@@ -85,7 +85,8 @@
         "/Users/alvaro/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after",
         "/Users/alvaro/.local/share/nvim/site/pack/packer/start/indentLine/after",
         "/Users/alvaro/.local/share/nvim/site/pack/packer/start/vim-dadbod-completion/after",
-        "${3rd}/luv/library"
+        "${3rd}/luv/library",
+        "${3rd}/luassert/library"
     ],
     "workspace.checkThirdParty": false
 }
