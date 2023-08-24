@@ -22,7 +22,8 @@ require('mcalvaro.hlargs.setup')        -- Setup Hlargs
 require('mcalvaro.swagger-preview.setup')        -- Swagger preview 
 require('mcalvaro.navbuddy.setup')        -- Swagger preview 
 require('mcalvaro.code-runner.setup')     -- Code Runner
-require('mcalvaro.dap')     -- Code Runner
+require('mcalvaro.dap')     -- DAP Setup
+require('mcalvaro.gitsigns')     -- gitsigns Setup
 
 -- PLUGINS: Add this section
 require('nvim-tree').setup{
@@ -72,14 +73,40 @@ require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true,
     disable = {"python"}
-  }
+  },
+    ensure_installed = {
+        "javascript", -- Agrega aquí los lenguajes que deseas mantener activos
+        "html",
+        'bash',
+        'comment',
+        'css',
+        'csv',
+        'dockerfile',
+        'git_config',
+        'gitattributes',
+        'gitcommit',
+        'gitignore',
+        'json',
+        'jsonc',
+        'lua',
+        'markdown',
+        'php',
+        'phpdoc',
+        'python',
+        'scss',
+        'sql',
+        'tsx',
+        'typescript',
+        'vue',
+        'xml',
+        'yaml'
+
+  },
 }
 
 require('notify').setup{}
 
 require('harpoon').setup{}
-
-require('gitsigns').setup{}
 
 require("toggleterm").setup{}
 
@@ -96,3 +123,5 @@ require('dressing').setup{
 require('telescope').load_extension "file_browser"
 
 require('null-ls').setup{}
+
+
